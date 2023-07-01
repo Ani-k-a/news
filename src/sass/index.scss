@@ -1,2 +1,11 @@
-@import './common';
-@import './example';
+@import './variables/brakpoints';
+@import './variables/colors';
+@import './variables/fonts';
+
+@import './utilits/mixins';
+
+@import './base/common';
+@import './base/container';
+
+@import './components/header';
+@import './components/footer';

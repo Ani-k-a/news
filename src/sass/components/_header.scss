@@ -1,0 +1,140 @@
+.header {
+  border-bottom: 1px solid $bg-lines;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.logo {
+  font-family: $second-font;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+
+  @include mq(tablet) {
+    font-size: 32px;
+  }
+  @include mq(desktop) {
+    font-size: 42px;
+  }
+}
+.header-nav {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+    @include mq(tablet) {
+      flex-direction: row;
+      gap: 44px;
+    }
+    @include mq(desktop) {
+      gap: 69px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    font-weight: 500;
+    @include mq(tablet) {
+      font-weight: 700;
+    }
+    @include mq(desktop) {
+      font-size: 18px;
+    }
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: $purple;
+  }
+
+  &__link--active {
+    padding-bottom: 5px;
+    border-bottom: 1px solid $purple;
+  }
+}
+.header-form {
+  position: relative;
+  margin-bottom: -6px;
+}
+
+.header-form__input {
+  background-color: transparent;
+  padding: 6px 6px 6px 48px;
+  border-radius: 20px;
+  border: 1px solid $black;
+  width: 213px;
+  @include mq(desktop) {
+    width: 288px;
+  }
+}
+
+.header-form__btn {
+  position: absolute;
+  left: 12px;
+  top: 6px;
+  border: none;
+  color: $black;
+  font-size: 16px;
+  background-color: transparent;
+}
+.theme {
+  display: flex;
+}
+
+.theme__icon {
+  @include mq(desktop) {
+    display: none;
+  }
+}
+.theme__title {
+  @include mq(notDesktop) {
+    display: none;
+  }
+}
+
+.theme__lable {
+  position: relative;
+  margin-left: 8px;
+  margin-right: 8px;
+  display: block;
+  width: 40px;
+  height: 20px;
+  border-radius: 20px;
+  border: 0.605px solid $purple;
+  background: transparent;
+}
+.theme__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.theme__thumbler {
+  width: 19px;
+  height: 19px;
+  border-radius: 50px;
+  background-color: $purple;
+  position: absolute;
+  left: 0px;
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+.dark-theme__input {
+  border-color: $bg-color;
+}
+.dark-theme__form-btn {
+  color: $bg-color;
+}
+.dark-theme__thumbler {
+  background-color: $bg-color;
+  transform: translatex(20px);
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+.dark-theme__lable {
+  background-color: $purple;
+  border-color: $bg-color;
+}

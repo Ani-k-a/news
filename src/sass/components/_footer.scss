@@ -1,0 +1,18 @@
+.footer {
+  background-color: $bg-footer;
+}
+.footer-container {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.copyright__text {
+  color: $white;
+}
+.social__list {
+  display: flex;
+  gap: 15px;
+  color: $white;
+  font-size: 26px;
+}
