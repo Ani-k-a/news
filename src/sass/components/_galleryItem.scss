@@ -1,0 +1,84 @@
+.gallery__card {
+  position: relative;
+  width: 320px;
+  @include mq(tablet) {
+    width: 352px;
+  }
+  @include mq(desktop) {
+    width: 396px;
+  }
+}
+
+.gallery__img {
+  margin-bottom: 20px;
+  height: 395px;
+  object-fit: cover;
+  @include mq(tablet) {
+  }
+  @include mq(desktop) {
+  }
+}
+
+// .gallery__descriptionBlock {
+// }
+
+.gallery__title-item {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  @include mq(tablet) {
+    font-size: 32px;
+  }
+}
+
+.gallery__description-item {
+  margin-bottom: 20px;
+  font-size: 14px;
+  @include mq(tablet) {
+    font-size: 16px;
+  }
+}
+
+.gallery__infoBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gallery__date {
+  font-size: 14px;
+  color: $gray;
+  @include mq(tablet) {
+    font-size: 16px;
+  }
+}
+
+.gallery__link {
+  color: $purple;
+  font-size: 14px;
+  @include mq(tablet) {
+    font-size: 16px;
+  }
+}
+
+.gallery__tag {
+  position: absolute;
+  color: $white;
+  background: rgba(68, 64, 246, 0.7);
+  font-size: 12px;
+  left: 0;
+  top: 40px;
+  width: 112px;
+  height: 24px;
+  padding: 5px 8px;
+  @include mq(tablet) {
+    width: 112px;
+    height: 24px;
+    border-radius: 0px 4px 4px 0px;
+    top: 44px;
+    left: 8px;
+  }
+  @include mq(tablet) {
+    left: 0;
+    top: 44px;
+  }
+}

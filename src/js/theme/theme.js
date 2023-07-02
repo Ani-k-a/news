@@ -7,17 +7,11 @@ const lable = document.querySelector('.theme__lable');
 const lights = document.querySelectorAll('.light');
 const darks = document.querySelectorAll('.dark');
 
-console.log(localStorage.getItem('theme'));
-
-
 const state = {
     theme: localStorage.getItem('theme') ? localStorage.getItem('theme') : localStorage.setItem('theme', "light"),
 }
 
-
-
 const toggleTheme = () => {
-    console.log(state);
     body.classList.toggle('dark-theme');
     headerInput.classList.toggle('dark-theme__input');
     headeerFormBtn.classList.toggle('dark-theme__form-btn');
@@ -26,7 +20,6 @@ const toggleTheme = () => {
     lights.forEach(el => el.classList.toggle('accent-icons'));
     darks.forEach(el => el.classList.toggle('accent-icons'));
 }
-
 
 const changeTheme = () => {
     toggleTheme();
