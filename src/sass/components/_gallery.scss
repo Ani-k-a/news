@@ -1,6 +1,7 @@
 .gallery-container {
   margin-bottom: 60px;
   @include mq(tablet) {
+    position: relative;
     margin-bottom: 100px;
   }
   @include mq(desktop) {

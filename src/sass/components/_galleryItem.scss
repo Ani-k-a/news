@@ -1,8 +1,11 @@
 .gallery__card {
   position: relative;
   width: 320px;
+  height: 469px;
+  border-radius: 4px;
   @include mq(tablet) {
     width: 352px;
+    height: 695px;
   }
   @include mq(desktop) {
     width: 396px;

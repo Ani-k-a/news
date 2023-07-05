@@ -1,0 +1,17 @@
+.weather {
+  width: 320px;
+  height: 469px;
+  background-color: $purple;
+  border-radius: 4px;
+
+  @include mq(tablet) {
+    position: absolute;
+    width: 352px;
+    height: 695px;
+    right: 18px;
+  }
+
+  @include mq(desktop) {
+    width: 395px;
+  }
+}
